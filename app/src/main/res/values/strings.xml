@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChaloApp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="button">Button</string>
+    <string name="abc_search_string">Search...</string>
+    <string name="search">Search...</string>
+</resources>

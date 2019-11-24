@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary" />
+
+
+
+
+
+
+
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF5722"
+        app:searchBackground="@color/colorPrimaryDark"
+        app:searchSuggestionBackground="@color/colorPrimary"
+        android:id="@+id/mSearch"
+        android:layout_below="@+id/toolbar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mSearch"
+        android:divider="#806326"
+        android:dividerHeight="1dp"
+        android:id="@+id/recyclerview"></androidx.recyclerview.widget.RecyclerView>
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:layout_below="@id/mSearch"
+        android:backgroundTint="#FFFFFF"
+        android:indeterminateTint="#1a09d6"
+        android:layout_marginTop="-7dp"/>
+
+
+
+
+</RelativeLayout>
